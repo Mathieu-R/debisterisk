@@ -7,6 +7,6 @@ RUN \
   asterisk-sample-config \
   && rm -rf /var/cache/apk/*
 
-CMD '/etc/init.d/asterisk start'
+CMD '/usr/sbin/asterisk'
 
 EXPOSE 5060
