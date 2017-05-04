@@ -10,7 +10,8 @@ RUN apt install -y \
   uuid-dev \
   sqlite3 \
   libsqlite3-dev \
-  pkg-config 
+  pkg-config \
+  libjansson-dev
   
 WORKDIR /usr/local/src/
 
