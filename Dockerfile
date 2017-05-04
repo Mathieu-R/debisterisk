@@ -41,4 +41,5 @@ EXPOSE 16392/udp
 EXPOSE 16393/udp
 EXPOSE 16394/udp
 
-CMD ["/usr/sbin/asterisk", "-f"]
+WORKDIR /etc/asterisk
+CMD ["asterisk", "-f"]
