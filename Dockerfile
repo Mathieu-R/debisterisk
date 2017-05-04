@@ -16,7 +16,7 @@ WORKDIR /usr/local/src/
 
 RUN wget https://downloads.asterisk.org/pub/telephony/asterisk/asterisk-14.4.0.tar.gz
 RUN tar -xzf asterisk-14.4.0.tar.gz
-WORKDIR ./asterisk-14.4.0/
+WORKDIR /usr/local/src/asterisk-14.4.0
 
 RUN ./configure
 RUN make
@@ -25,7 +25,7 @@ RUN make samples
 
 VOLUME /etc/asterisk
 
-CMD '/usr/sbin/asterisk'
+CMD ['/usr/sbin/asterisk']
 
 EXPOSE 5060/udp
 EXPOSE 5060/tcp
