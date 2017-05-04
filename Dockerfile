@@ -1,4 +1,4 @@
-FROM debian:8
+FROM debian:jessie
 
 RUN apt update && apt upgrade -y 
 RUN apt install -y \
