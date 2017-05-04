@@ -3,6 +3,7 @@ FROM debian:8
 RUN apt update && apt upgrade -y 
 RUN apt install -y \
   build-essential \
+  wget \
   openssl \
   libxml2-dev \
   libncurses5-dev \
