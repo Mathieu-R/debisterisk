@@ -26,8 +26,6 @@ RUN make samples
 
 VOLUME /etc/asterisk
 
-CMD ['/usr/sbin/asterisk']
-
 EXPOSE 5060/udp
 EXPOSE 5060/tcp
 EXPOSE 9080
@@ -42,3 +40,5 @@ EXPOSE 16391/udp
 EXPOSE 16392/udp
 EXPOSE 16393/udp
 EXPOSE 16394/udp
+
+CMD ["/usr/sbin/asterisk", "-f"]
