@@ -16,12 +16,14 @@ WORKDIR /usr/local/src/
 
 RUN wget https://downloads.asterisk.org/pub/telephony/asterisk/asterisk-14.4.0.tar.gz
 RUN tar -xzf asterisk-14.4.0.tar.gz
-WORKDIR asterisk-14.4.0/
+WORKDIR ./asterisk-14.4.0/
 
 RUN ./configure
 RUN make
 RUN make install 
 RUN make samples
+
+VOLUME /etc/asterisk
 
 CMD '/usr/sbin/asterisk'
 
