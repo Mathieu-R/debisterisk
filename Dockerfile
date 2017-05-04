@@ -10,7 +10,7 @@ RUN apt install -y \
   uuid-dev \
   sqlite3 \
   libsqlite3-dev \
-  pkg-config 
+  pkg-config \ 
   
 WORKDIR /usr/local/src/
 
