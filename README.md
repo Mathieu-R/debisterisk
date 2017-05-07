@@ -10,7 +10,7 @@ You can easily erase default asterisk configuration files by mounting volumes.
 voip:
   image: matiuso/debisterisk:latest
   ports:
-    - 5060:5060
+    - 5060:5060/udp
     - 5060:5060/tcp
     - 9080:9080
     - 16384-16394:16384-16394/udp
